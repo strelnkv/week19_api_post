@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 30%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      #postsContainer {
+        margin-top: 20px;
+      }
+
+      .post {
+        background-color: #f4f4f4;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .post h2 {
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .post p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Добавление постов</h1>
+
+    <form id="postForm">
+      <label for="title">Заголовок:</label>
+      <input type="text" id="title" name="title" /><br />
+
+      <label for="body">Текст:</label>
+      <textarea id="body" name="body"></textarea><br />
+
+      <button type="submit">Добавить пост</button>
+    </form>
+
+    <div id="postsContainer"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
